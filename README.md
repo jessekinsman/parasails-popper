@@ -42,8 +42,9 @@ Refer to the [popper.js](https://popper.js.org/docs/v2/constructors/) documentat
 ### An example of use
 ~~~~
 <popper class="w-100" trigger="clickToOpen" :options="{placement: 'top'}">
-<p @click.prevent="methodInParent">The content you want displayed in your popper</p>
+    <p @click.prevent="methodInParent">The content you want displayed in your popper</p>
 </popper>
 ~~~~
 
-The parasails popper uses content slots so you can add a method on the content of a popper from the parent component. In the above example "methodInParent()" would be a method in the parent component of the parasails popper.
+### Calling methods from within the popper 
+The parasails popper uses content slots so you can call a method on the content of a popper from the parent component. In the above example "methodInParent()" would be a method in the parent component of the parasails popper.
